@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BUS_ASSIGNMENT_DM.sql" id="88E186A2-E1BB-7521-3BCF-B2BE8EFB22BB" version="3.5">
+<createdBy>titan</createdBy>
+<createdTime>2024-01-05 12:16:03 UTC</createdTime>
+<ownerDesignName>BUS_ASSIGNMENT_DM.sql</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>88E186A2-E1BB-7521-3BCF-B2BE8EFB22BB</designId>
+</OSDM_Design>
