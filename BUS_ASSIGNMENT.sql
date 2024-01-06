@@ -18,6 +18,7 @@ CREATE TABLE customer (
 CREATE TABLE bus (
     bus_id VARCHAR2(10 CHAR),
     bus_number VARCHAR2(8 CHAR),
+    seating_capacity NUMBER DEFAULT 50,
     employee_id VARCHAR2(10 CHAR)UNIQUE,
     CONSTRAINT bus_pk PRIMARY KEY (bus_id),
     CONSTRAINT bus_employee_fk FOREIGN KEY (employee_id) REFERENCES employee (employee_id)
@@ -28,7 +29,6 @@ CREATE TABLE bus_trip (
     departure_location VARCHAR2(50 CHAR),
     bt_destination VARCHAR2(50 CHAR),
     departure DATE,
-    seating_capacity NUMBER DEFAULT 50,
     bus_id varchar2(10 CHAR) UNIQUE,
     CONSTRAINT bus_trip_pk PRIMARY KEY (bus_trip_id),
     CONSTRAINT bus_trip_bus_fk FOREIGN KEY (bus_id) REFERENCES bus (bus_id) ON DELETE SET NULL,
