@@ -2,6 +2,8 @@
 A small Oracle SQL bus assignment for university
 
 ## Relational model in Oracle SQL Data Modeler
-![image](https://github.com/Kraziman/BUS-ASSIGNMENT/assets/70752688/a3d1081c-79c2-4e75-aa64-e82c7a776586)
+![image](https://github.com/Kraziman/BUS-ASSIGNMENT/assets/70752688/8f772000-d009-4bd7-abc5-0f8352a366b5)
+
 ## Logical model in Oracle SQL Data Modeler
-![image](https://github.com/Kraziman/BUS-ASSIGNMENT/assets/70752688/2396c65c-95c0-42e9-90b4-db83106826e3)
+![image](https://github.com/Kraziman/BUS-ASSIGNMENT/assets/70752688/9d7f0f85-9106-4c74-a775-657912d1337f)
+
