@@ -28,7 +28,7 @@ CREATE TABLE bus_trip (
     bus_trip_id VARCHAR2(10 CHAR),
     departure_location VARCHAR2(50 CHAR),
     bt_destination VARCHAR2(50 CHAR),
-    departure DATE,
+    departure TIMESTAMP,
     bus_id varchar2(10 CHAR) UNIQUE,
     CONSTRAINT bus_trip_pk PRIMARY KEY (bus_trip_id),
     CONSTRAINT bus_trip_bus_fk FOREIGN KEY (bus_id) REFERENCES bus (bus_id) ON DELETE SET NULL,
@@ -53,7 +53,7 @@ CREATE TABLE ticket (
 CREATE TABLE reservation (
     reservation_id VARCHAR2(10 CHAR),
     seat_number NUMBER CHECK (seat_number BETWEEN 1 AND 50),
-    reservation_date DATE,
+    reservation_date TIMESTAMP,
     employee_id varchar2(10 CHAR),
     customer_id varchar2(10 CHAR),
     bus_trip_id varchar2(10 CHAR),
