@@ -29,7 +29,7 @@ CREATE TABLE bus_trip (
     departure_location VARCHAR2(50 CHAR),
     bt_destination VARCHAR2(50 CHAR),
     departure TIMESTAMP,
-    bus_id varchar2(10 CHAR) UNIQUE,
+    bus_id varchar2(10 CHAR),
     CONSTRAINT bus_trip_pk PRIMARY KEY (bus_trip_id),
     CONSTRAINT bus_trip_bus_fk FOREIGN KEY (bus_id) REFERENCES bus (bus_id) ON DELETE SET NULL,
     CONSTRAINT unique_bus_departure UNIQUE (bus_id, departure)
