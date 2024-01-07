@@ -66,14 +66,14 @@ GROUP BY
 SELECT
     r.reservation_date,
     t.ticket_destination,
-    SUM(t.price) AS total_sales
+    t.price
 FROM
     reservation r
 JOIN ticket t ON r.ticket_id = t.ticket_id
 WHERE
     r.reservation_date BETWEEN TO_DATE('24-01-07', 'yyyy-mm-dd') AND TO_DATE('24-02-05', 'yyyy-mm-dd')
 GROUP BY
-    r.reservation_date, t.ticket_destination
+    r.reservation_date, t.ticket_destination, t.price
 ORDER BY
     r.reservation_date;
     
