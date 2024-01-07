@@ -1,5 +1,5 @@
 # BUS-ASSIGNMENT
-A small Oracle SQL bus assignment for university
+A small Oracle SQL project for university. The theme of the assignment is **bus transportation**
 
 ## Relational model in Oracle SQL Data Modeler
 ![image](https://github.com/Kraziman/BUS-ASSIGNMENT/assets/70752688/aaf3236a-47f2-4012-95c3-f2891c9dd203)
