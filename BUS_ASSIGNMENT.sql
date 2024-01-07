@@ -18,7 +18,7 @@ CREATE TABLE customer (
 CREATE TABLE bus (
     bus_id VARCHAR2(10 CHAR),
     bus_number VARCHAR2(8 CHAR),
-    seating_capacity NUMBER DEFAULT 50,
+    seating_capacity NUMBER DEFAULT 50 CHECK (seating_capacity = 50),
     employee_id VARCHAR2(10 CHAR)UNIQUE,
     CONSTRAINT bus_pk PRIMARY KEY (bus_id),
     CONSTRAINT bus_employee_fk FOREIGN KEY (employee_id) REFERENCES employee (employee_id)
